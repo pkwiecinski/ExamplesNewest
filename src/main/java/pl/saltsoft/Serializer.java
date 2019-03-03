@@ -11,7 +11,9 @@ public class Serializer {
     }
 
 
-    public void deSerialize(){
-
+    public Pizza deSerialize(String pizz){
+        Gson gson = new Gson();
+        Pizza bestpizza = gson.fromJson(pizz, Pizza.class);
+        return bestpizza;
     }
 }
