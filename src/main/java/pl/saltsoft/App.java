@@ -9,10 +9,11 @@ public class App {
     }
 
     public static void main(String[] args) throws Exception {
-    System.out.println(new App().getGreeting());
-    ReadFile f = new ReadFile();
-    f.readLinesFromFile("U:\\sum\\ExamplesNewest\\src\\main\\java\\pl\\saltsoft\\App.java");
-    f.writeLinesFromFile("readme.md");
+
+    Pizza pizza = new Pizza("Margarita",32.5,2);
+    Serializer s = new Serializer();
+    s.doSerialize(pizza);
+
     }
 
 }
